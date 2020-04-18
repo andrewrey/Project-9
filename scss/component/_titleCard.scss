@@ -11,21 +11,67 @@
   justify-content: center;
   align-items: center;
   position: relative;
+}
 
   .menuIcon{
     position: absolute;
-    top: 10px;
-    right: 10px;
-    img {
+    top: 15px;
+    right: 15px;
+    .menuButton {
+      cursor: pointer;
+      transition: all .5s ease-in-out;
       width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid white;
     }
+  }    
+      
+  .menuBurg{
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: all .5s ease-in-out;
+    &::before, 
+    &::after {
+      content: '';
+      position: absolute;
+      width: 25px;
+      height: 3px;
+      background: white;
+      transition: all .5s ease-in-out;
+    }
+    &::before{
+      transform: translateY(-10px);
+    }
+    &::after{
+      transform: translateY(10px);
+    }
+  }      
+
+
+  // Animation sequence /////////
+  .menuButton.open .menuBurg {
+    transform: translateX(-30px);
+    background: transparent;
   }
+  
+  .menuButton.open .menuBurg::before{
+    transform: rotate(45deg) translate(21px, -21px);
+  }
+  .menuButton.open .menuBurg::after{
+    transform: rotate(-45deg) translate(21px, 21px);
+  }
+
+  // Animation sequence Complete //////
 
   .titleText {
     background-color: rgba(228, 230, 229, .5);
     width: 50%;
     border-radius: 5px;
     text-align: center;
-
   }
-}
