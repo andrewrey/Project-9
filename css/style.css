@@ -318,6 +318,29 @@ template {
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
+.titleCard {
+  background: url("../img/snowmountain.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; }
+  .titleCard .menuIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px; }
+    .titleCard .menuIcon img {
+      width: 50px; }
+  .titleCard .titleText {
+    background-color: rgba(228, 230, 229, 0.5);
+    width: 50%;
+    border-radius: 5px;
+    text-align: center; }
+
+/* ============================================= */
+/*              Main  Styles                     */
+/* ============================================= */
 /* ============================================= */
 /*              Footer Styles                    */
 /* ============================================= */

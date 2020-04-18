@@ -1,0 +1,31 @@
+/* ============================================= */
+/*              Main  Styles                     */
+/* ============================================= */
+
+
+.titleCard {
+  background: url("../img/snowmountain.jpg");
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  .menuIcon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    img {
+      width: 50px;
+    }
+  }
+
+  .titleText {
+    background-color: rgba(228, 230, 229, .5);
+    width: 50%;
+    border-radius: 5px;
+    text-align: center;
+
+  }
+}
