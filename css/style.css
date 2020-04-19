@@ -330,6 +330,35 @@ template {
   align-items: center;
   position: relative; }
 
+.menuOverlay {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background: darkslategrey;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: 2s all ease-in-out; }
+
+.menuOverlayAnimation {
+  animation: slideUp 5s ease-in forwards; }
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(90%);
+    background-color: floralwhite; }
+  100% {
+    background-color: darkslategrey;
+    transform: translateY(0%); } }
+.titleText {
+  background-color: rgba(228, 230, 229, 0.5);
+  width: 50%;
+  border-radius: 5px;
+  text-align: center; }
+
 .menuIcon {
   position: absolute;
   top: 15px;
@@ -372,12 +401,6 @@ template {
 
 .menuButton.open .menuBurg::after {
   transform: rotate(-45deg) translate(21px, 21px); }
-
-.titleText {
-  background-color: rgba(228, 230, 229, 0.5);
-  width: 50%;
-  border-radius: 5px;
-  text-align: center; }
 
 /* ============================================= */
 /*              Main  Styles                     */
