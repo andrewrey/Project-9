@@ -1,6 +1,7 @@
 const button = document.querySelector('.menuButton');
 const menuOverlay = document.querySelector('.menuOverlay'); 
 let menuOpen = false;
+let overlayLi = menuOverlay.querySelectorAll('li');
 
 
 
@@ -16,6 +17,15 @@ button.addEventListener('click', ()=>{
   } else {
     menuOverlay.classList.remove('menuOverlayAnimation');
   }
+  console.log(overlayLi);
+  overlayLi.forEach((listItem, i) => {
+    if (!listItem.classList.contains('liAnimation')){
+      setTimeout(()=> listItem.classList.add('liAnimation'), i * 1000);
+    } else {
+      listItem.classList.remove('liAnimation');
+    }
+  });
+
   
   if(!menuOpen){
     button.classList.add('open');

@@ -347,7 +347,13 @@ template {
   display: none; }
 
 .menuOverlayAnimation {
-  animation: slideUp 5s ease-in forwards; }
+  animation: slideUp .8s ease-in forwards; }
+
+.menuOverlay li {
+  transform: translateX(110%); }
+
+.liAnimation {
+  animation: moverOver 1s .8s ease-in forwards; }
 
 @keyframes slideUp {
   0% {
@@ -356,6 +362,13 @@ template {
   100% {
     background-color: darkslategrey;
     transform: translateY(0%); } }
+@keyframes moverOver {
+  0% {
+    transform: translateX(0%);
+    color: white; }
+  100% {
+    transform: translateX(-100%);
+    color: #afafff; } }
 .titleText {
   background-color: rgba(228, 230, 229, 0.5);
   width: 50%;
