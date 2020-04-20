@@ -38,6 +38,16 @@
 
 .menuOverlay li {
   transform: translateX(110%);
+  margin-bottom: 30px;
+  list-style: none;
+  font-size: 2rem;
+  transition: 2s;
+
+}
+
+li:hover{
+  font-size: 3rem;
+  text-shadow: 2px 2px lightpink;
 }
 
 .liAnimation {
@@ -57,11 +67,11 @@
 
 @keyframes moverOver{
   0%{
-    transform: translateX(0%);
+    transform: translateX(110%);
     color: rgb(255, 255, 255);
   }
   100%{
-    transform: translateX(-100%);
+    transform: translateX(0%);
     color: rgb(175, 175, 255);
   }
 }

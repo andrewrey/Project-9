@@ -350,7 +350,15 @@ template {
   animation: slideUp .8s ease-in forwards; }
 
 .menuOverlay li {
-  transform: translateX(110%); }
+  transform: translateX(110%);
+  margin-bottom: 30px;
+  list-style: none;
+  font-size: 2rem;
+  transition: 2s; }
+
+li:hover {
+  font-size: 3rem;
+  text-shadow: 2px 2px lightpink; }
 
 .liAnimation {
   animation: moverOver 1s .8s ease-in forwards; }
@@ -364,10 +372,10 @@ template {
     transform: translateY(0%); } }
 @keyframes moverOver {
   0% {
-    transform: translateX(0%);
+    transform: translateX(110%);
     color: white; }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(0%);
     color: #afafff; } }
 .titleText {
   background-color: rgba(228, 230, 229, 0.5);
