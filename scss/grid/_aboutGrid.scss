@@ -3,7 +3,31 @@
 /* ============================================= */
 
 
-.about {
+#about .aboutWrapper{
   display: grid;
-  
+  height: 100vh;
+  margin: 0 auto;
+  max-width: 1000px;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+  grid-gap: 15px;
+  grid-template-areas: 
+    "aboutHead"
+    "aboutMain"
+    "aboutFooter";
+}
+
+#about {
+  header{
+    grid-area: aboutHead;
+    background-color: #0099ff;
+  }
+  main{
+    grid-area: aboutMain;
+    background-color: white;
+  }
+  footer{
+    grid-area: aboutFooter;
+    background-color: #e6e6e6;
+  }
 }
