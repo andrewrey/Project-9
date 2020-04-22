@@ -42,7 +42,11 @@
   list-style: none;
   font-size: 2rem;
   transition: 2s;
+}
 
+.menuOverlay li a{
+  color: inherit;
+  text-decoration: none;
 }
 
 li:hover{

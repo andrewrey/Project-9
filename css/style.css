@@ -318,9 +318,6 @@ template {
 /* ============================================= */
 /*              Header Styles                    */
 /* ============================================= */
-header {
-  grid-area: header; }
-
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
@@ -358,6 +355,10 @@ header {
   list-style: none;
   font-size: 2rem;
   transition: 2s; }
+
+.menuOverlay li a {
+  color: inherit;
+  text-decoration: none; }
 
 li:hover {
   font-size: 3rem;
@@ -435,7 +436,5 @@ li:hover {
 /* ============================================= */
 /*              Footer Styles                    */
 /* ============================================= */
-footer {
-  grid-area: footer; }
 
 /*# sourceMappingURL=style.css.map */
