@@ -20,6 +20,9 @@
   header{
     grid-area: aboutHead;
     background-color: #0099ff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
   main{
     grid-area: aboutMain;

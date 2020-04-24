@@ -456,7 +456,10 @@ svg {
 
 #about header {
   grid-area: aboutHead;
-  background-color: #0099ff; }
+  background-color: #0099ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
 #about main {
   grid-area: aboutMain;
   background-color: white; }
