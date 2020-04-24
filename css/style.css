@@ -315,6 +315,9 @@ template {
 * {
   box-sizing: border-box; }
 
+svg {
+  width: 50px; }
+
 /* ============================================= */
 /*              Header Styles                    */
 /* ============================================= */
@@ -322,7 +325,7 @@ template {
 /*              Main  Styles                     */
 /* ============================================= */
 .titleCard {
-  background: url("../img/snowmountain.jpg");
+  background: url("../img/snowmountain.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -460,6 +463,15 @@ template {
 #about footer {
   grid-area: aboutFooter;
   background-color: #e6e6e6; }
+#about li {
+  list-style: none;
+  margin: 0 15px; }
+#about a {
+  display: inline-block; }
+#about ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 /* ============================================= */
 /*              Contact Grid Styling               */
