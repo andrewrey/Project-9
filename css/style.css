@@ -411,41 +411,69 @@ svg {
   .menuIcon .menuButton {
     cursor: pointer;
     transition: all .5s ease-in-out;
-    width: 50px;
-    height: 50px;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 3px solid white; }
+    border: 1px solid white; }
+    @media (min-width: 768px) {
+      .menuIcon .menuButton {
+        width: 50px;
+        height: 50px;
+        border: 3px solid white; } }
 
 .menuBurg {
-  width: 25px;
-  height: 3px;
+  width: 12px;
+  height: 1px;
   background: white;
   transition: all .5s ease-in-out; }
+  @media (min-width: 768px) {
+    .menuBurg {
+      width: 25px;
+      height: 3px; } }
   .menuBurg::before, .menuBurg::after {
     content: '';
     position: absolute;
-    width: 25px;
-    height: 3px;
+    width: 12px;
+    height: 1px;
     background: white;
     transition: all .5s ease-in-out; }
+    @media (min-width: 768px) {
+      .menuBurg::before, .menuBurg::after {
+        width: 25px;
+        height: 3px; } }
   .menuBurg::before {
-    transform: translateY(-10px); }
+    transform: translateY(-5px); }
+    @media (min-width: 768px) {
+      .menuBurg::before {
+        transform: translateY(-10px); } }
   .menuBurg::after {
-    transform: translateY(10px); }
+    transform: translateY(5px); }
+    @media (min-width: 768px) {
+      .menuBurg::after {
+        transform: translateY(10px); } }
 
 .menuButton.open .menuBurg {
-  transform: translateX(-30px);
+  transform: translateX(-15px);
   background: transparent; }
+  @media (min-width: 768px) {
+    .menuButton.open .menuBurg {
+      transform: translateX(-30px); } }
 
 .menuButton.open .menuBurg::before {
-  transform: rotate(45deg) translate(21px, -21px); }
+  transform: rotate(45deg) translate(10.5px, -10.5px); }
+  @media (min-width: 768px) {
+    .menuButton.open .menuBurg::before {
+      transform: rotate(45deg) translate(21px, -21px); } }
 
 .menuButton.open .menuBurg::after {
-  transform: rotate(-45deg) translate(21px, 21px); }
+  transform: rotate(-45deg) translate(10.5px, 10.5px); }
+  @media (min-width: 768px) {
+    .menuButton.open .menuBurg::after {
+      transform: rotate(-45deg) translate(21px, 21px); } }
 
 /* ============================================= */
 /*              Main  Styles                     */
