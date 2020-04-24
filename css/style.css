@@ -319,7 +319,10 @@ template {
   box-sizing: border-box; }
 
 svg {
-  width: 50px; }
+  width: 30px;
+  display: inline-block; }
+  svg path {
+    fill: white; }
 
 /* ============================================= */
 /*              Header Styles                    */
