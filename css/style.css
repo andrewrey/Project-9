@@ -1,6 +1,9 @@
 /* ============================================= */
 /*              Variables                        */
 /* ============================================= */
+/* ========= */
+/*  Colors   */
+/* ========= */
 /* ============================================= */
 /*              Mixins                           */
 /* ============================================= */
@@ -325,7 +328,7 @@ svg {
 /*              Main  Styles                     */
 /* ============================================= */
 .titleCard {
-  background: url("../img/snowmountain.jpg") center center no-repeat;
+  background: url("../img/ocean-clouds.jpg") center center no-repeat;
   background-size: cover;
   height: 100vh;
   display: flex;
@@ -338,7 +341,6 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
   background: darkslategrey;
   top: 0;
   left: 0;
@@ -357,7 +359,8 @@ svg {
   margin-bottom: 30px;
   list-style: none;
   font-size: 2rem;
-  transition: 2s; }
+  transition: 2s;
+  visibility: hidden; }
 
 .menuOverlay li a {
   color: inherit;
@@ -373,22 +376,33 @@ svg {
 @keyframes slideUp {
   0% {
     transform: translateY(90%);
-    background-color: floralwhite; }
+    background-color: #F7F1FB; }
   100% {
-    background-color: darkslategrey;
+    background-color: dGrey;
     transform: translateY(0%); } }
 @keyframes moverOver {
   0% {
     transform: translateX(110%);
-    color: white; }
+    color: white;
+    visibility: visible; }
   100% {
     transform: translateX(0%);
-    color: #afafff; } }
+    color: #afafff;
+    visibility: visible; } }
 .titleText {
   background-color: rgba(228, 230, 229, 0.5);
-  width: 50%;
+  width: 73%;
   border-radius: 5px;
   text-align: center; }
+  @media (min-width: 568px) {
+    .titleText {
+      width: 80%;
+      max-width: 900px; } }
+  .titleText h1 span {
+    display: block; }
+    @media (min-width: 568px) {
+      .titleText h1 span {
+        display: inline-block; } }
 
 .menuIcon {
   position: absolute;
