@@ -37,9 +37,13 @@
 
 .menuOverlay li {
   transform: translateX(110%);
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   list-style: none;
-  font-size: 2rem;
+  font-size: 1.2rem;
+  @include mq(768px){
+    font-size: 2rem;
+    margin-bottom:30px;
+  }
   transition: 2s;
   visibility: hidden;
 
@@ -102,8 +106,8 @@
 
   .menuIcon{
     position: absolute;
-    top: 15px;
-    right: 15px;
+    top: 25px;
+    right: 30px;
     .menuButton {
       cursor: pointer;
       transition: all .5s ease-in-out;
