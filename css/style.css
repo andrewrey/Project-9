@@ -515,6 +515,8 @@ svg {
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 15px;
   grid-template-areas: "aboutHead" "aboutMain" "aboutFooter"; }
+  #about .aboutWrapper h1 {
+    margin: 0; }
 
 #about header {
   grid-area: aboutHead;
