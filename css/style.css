@@ -4,6 +4,9 @@
 /* ========= */
 /*  Colors   */
 /* ========= */
+/* ========= */
+/*  Fonts    */
+/* ========= */
 /* ============================================= */
 /*              Mixins                           */
 /* ============================================= */
@@ -316,7 +319,8 @@ template {
 /*              Base styles                      */
 /* ============================================= */
 * {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif; }
 
 svg {
   width: 30px;
@@ -350,6 +354,14 @@ svg {
   right: 0;
   bottom: 0;
   transition: 2s all ease-in-out; }
+
+.menuWrap {
+  border: white 1px solid;
+  width: 70%;
+  max-width: 700px;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
 
 .hidden {
   display: none; }
