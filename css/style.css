@@ -536,11 +536,21 @@ svg {
   justify-content: center;
   align-items: center; }
 
+.aboutNavWrapper {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
 .proImg {
-  margin: 0; }
+  margin: 0;
+  width: 50%; }
 
 .proImg img {
-  height: 100%; }
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: 50% 50%; }
 
 /* ============================================= */
 /*              Contact Grid Styling               */
