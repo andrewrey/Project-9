@@ -38,7 +38,10 @@
   }
   li{
     list-style: none;
-    margin-right: 15px;
+    margin-bottom: 20px;
+    @include mq(768px){
+      margin-right: 20px;
+    }
   }
 
   a{
@@ -47,32 +50,57 @@
 
   ul {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-
+    margin: 0;
+    padding: 0;
+    @include mq(768px){
+      flex-direction: row;
+    }
+    
   }
 
 }
 
+.aboutHeading{
+  display: none;
+  @include mq(768px){
+    display: block;
+  }
+}
 
-// .aboutNavWrapper {
-//   width: 50%;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-// }
+.aboutNavWrapper {
+  width: 40px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  @include mq(768px){
+    width: 50%;
+    position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  & nav{
+    @include mq(768px){
+      margin-top: 30px;
+    }
+    margin-top: 25px;
+  }
+}
 
 
 .proImg {
   margin: 0;
   width: 100%;
+  position: relative;
+  @include mq(768px){
+    width: 50%;
+  }
 }
 
 .proImg img{
   height: 100%;
   width: 100%;
   object-fit: cover;
-  @include mq(768px){
-    width: 50%;
-  } 
 }
