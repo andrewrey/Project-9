@@ -8,6 +8,7 @@
   height: 100vh;
   margin: 0 auto;
   grid-template-columns: 1fr;
+  grid-template-rows: 350px;
   grid-auto-rows: minmax(150px, auto);
   grid-gap: 15px;
   grid-template-areas: 
@@ -19,22 +20,22 @@
 #about {
   header{
     grid-area: aboutHead;
-    background-color: #0099ff;
+    background-color: $tealBlue;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
+  
+  
   main{
     grid-area: aboutMain;
     background-color: white;
   }
   footer{
     grid-area: aboutFooter;
-    background-color: #e6e6e6;
+    background-color: $dGrey;
   }
   li{
     list-style: none;
-    margin: 0 15px;
+    margin-right: 15px;
   }
 
   a{
@@ -48,4 +49,13 @@
 
   }
 
+}
+
+.proImg {
+  margin: 0;
+}
+
+.proImg img{
+  height: 100%;
+  // width: auto;
 }
