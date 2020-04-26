@@ -512,38 +512,50 @@ svg {
   height: 100vh;
   margin: 0 auto;
   grid-template-columns: 1fr;
-  grid-template-rows: 500px;
+  grid-template-rows: minmax(350px, 1fr);
   grid-auto-rows: minmax(150px, auto);
-  grid-gap: 15px;
+  grid-gap: 5px;
   grid-template-areas: "aboutHead" "about" "aboutMain" "aboutFooter"; }
+  @media (min-width: 768px) {
+    #about .aboutWrapper {
+      grid-template-columns: 1fr 1fr; } }
   #about .aboutWrapper h1 {
     margin: 0; }
+  @media (min-width: 768px) {
+    #about .aboutWrapper {
+      grid-template-areas: "aboutHead about" "aboutMain aboutMain" "aboutFooter aboutFooter"; } }
 
 #about header {
   grid-area: aboutHead;
-  background-color: #40798C; }
-#about .aboutNavWrapper {
-  grid-area: about; }
-  #about .aboutNavWrapper li {
-    list-style: none;
-    display: inline-block; }
-    #about .aboutNavWrapper li a {
-      display: block; }
+  background-color: #40798C;
+  position: relative;
+  background-image: url("../img/placeholder.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  @media (min-width: 768px) {
+    #about header {
+      position: static; } }
+#about .about {
+  grid-area: about;
+  background-color: lightsalmon; }
+  @media (min-width: 768px) {
+    #about .about {
+      position: relative; } }
 #about main {
   grid-area: aboutMain;
-  background-color: white; }
+  background-color: lightskyblue; }
 #about footer {
   grid-area: aboutFooter;
   background-color: #4D5057; }
-
-.proImg {
-  margin: 0;
-  width: 100%; }
-
-.proImg img {
-  height: 100%;
-  width: 100%;
-  object-fit: cover; }
+#about nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  z-index: 1; }
+  #about nav li {
+    list-style: none;
+    margin-bottom: 20px; }
 
 /* ============================================= */
 /*              Contact Grid Styling               */
