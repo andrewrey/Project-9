@@ -16,6 +16,7 @@
   }
   grid-template-areas: 
     "aboutHead"
+    "about"
     "aboutMain"
     "aboutFooter";
 }
@@ -24,10 +25,19 @@
   header{
     grid-area: aboutHead;
     background-color: $tealBlue;
-    display: flex;
   }
-  
-  
+
+  .aboutNavWrapper {
+    grid-area: about;
+    li {
+      a{
+        display: block;
+      }
+      list-style: none;
+      display: inline-block;
+    }
+  }
+
   main{
     grid-area: aboutMain;
     background-color: white;
@@ -36,67 +46,12 @@
     grid-area: aboutFooter;
     background-color: $dGrey;
   }
-  li{
-    list-style: none;
-    margin-bottom: 20px;
-    @include mq(768px){
-      margin-right: 20px;
-    }
-  }
-
-  a{
-    display: inline-block;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding: 0;
-    @include mq(768px){
-      flex-direction: row;
-    }
-    
-  }
-
-}
-
-.aboutHeading{
-  display: none;
-  @include mq(768px){
-    display: block;
-  }
-}
-
-.aboutNavWrapper {
-  width: 40px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  @include mq(768px){
-    width: 50%;
-    position: static;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  & nav{
-    @include mq(768px){
-      margin-top: 30px;
-    }
-    margin-top: 25px;
-  }
-}
+} 
 
 
 .proImg {
   margin: 0;
   width: 100%;
-  position: relative;
-  @include mq(768px){
-    width: 50%;
-  }
 }
 
 .proImg img{
