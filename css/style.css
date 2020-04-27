@@ -560,6 +560,12 @@ svg {
     list-style: none;
     margin-bottom: 20px; }
 
+.aboutChart {
+  width: 100%; }
+
+#jobDoughnutChart {
+  z-index: 1; }
+
 /* ============================================= */
 /*              Contact Grid Styling               */
 /* ============================================= */
