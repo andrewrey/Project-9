@@ -23,4 +23,7 @@ let doughnutChart = new Chart(jobChart, {
       'ceo'
     ]
   },
+  options: {
+    cutoutPercentage: 60
+  }
 });
