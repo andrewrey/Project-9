@@ -5,7 +5,7 @@
 
 #about .aboutWrapper{
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   grid-template-columns: 1fr;
   @include mq(768px){
@@ -31,6 +31,10 @@
 }
 
 #about {
+  .textWrap{
+    width: 80%;
+    margin: 0 auto;
+  }
   header{
     grid-area: aboutHead;
     background-color: $tealBlue;
@@ -71,5 +75,7 @@
     }
   }
 } 
+
+
 
 

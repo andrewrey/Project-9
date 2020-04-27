@@ -509,7 +509,7 @@ svg {
 /* ============================================= */
 #about .aboutWrapper {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0 auto;
   grid-template-columns: 1fr;
   grid-template-rows: minmax(350px, 1fr);
@@ -525,6 +525,9 @@ svg {
     #about .aboutWrapper {
       grid-template-areas: "aboutHead about" "aboutMain aboutMain" "aboutFooter aboutFooter"; } }
 
+#about .textWrap {
+  width: 80%;
+  margin: 0 auto; }
 #about header {
   grid-area: aboutHead;
   background-color: #40798C;
