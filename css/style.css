@@ -334,10 +334,20 @@ svg {
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
+.page {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+
 .titleCard {
   background: url("../img/ocean-clouds.jpg") center center no-repeat;
   background-size: cover;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,7 +360,8 @@ svg {
   left: 50%;
   display: flex;
   justify-content: center;
-  align-items: center; }
+  align-items: center;
+  z-index: 10; }
 
 .downArrow {
   position: relative;
@@ -365,7 +376,7 @@ svg {
     width: 100%;
     border-right: 2px solid #363532;
     border-bottom: 2px solid #363532;
-    animation: pulse 1s linear infinite; }
+    animation: pulse 1s ease-out infinite; }
 @keyframes pulse {
   0% {
     border-color: white; }
@@ -373,15 +384,15 @@ svg {
     border-color: white; }
   20.1%, 100% {
     border-color: #363532; } }
-  .downArrow span:nth-of-type(1) {
+  .downArrow span:nth-child(1) {
     top: -15px;
     left: -15px;
-    animation-delay: 0; }
-  .downArrow span:nth-of-type(2) {
+    animation-delay: 0s; }
+  .downArrow span:nth-child(2) {
     top: -7.5px;
     left: -7.5px;
     animation-delay: .3s; }
-  .downArrow span:nth-of-type(3) {
+  .downArrow span:nth-child(3) {
     top: 0;
     left: 0;
     animation-delay: .4s; }
