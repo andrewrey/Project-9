@@ -343,6 +343,12 @@ svg {
   right: 0;
   left: 0; }
 
+.headerPage {
+  z-index: 1000; }
+
+.project {
+  z-index: -1; }
+
 .titleCard {
   background: url("../img/ocean-clouds.jpg") center center no-repeat;
   background-size: cover;
