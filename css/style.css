@@ -343,6 +343,15 @@ svg {
   align-items: center;
   position: relative; }
 
+.arrow {
+  fill: gold; }
+
+.downArrow {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -12.5px; }
+
 .menuOverlay {
   position: absolute;
   display: flex;
