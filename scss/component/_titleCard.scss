@@ -30,16 +30,34 @@
   align-items: center;
   position: relative;
 }
-// .arrow {
-//   fill: gold;
-// }
 
-// .downArrow {
-//   position: absolute;
-//   bottom: 0;
-//   left: 50%;
-//   margin-left: -12.5px;
-// }
+// Animation for titleCard Change //@extend
+
+.animatedCard{
+  animation: switchCard 3s ease-out;
+}
+
+@keyframes switchCard {
+  10%{
+  transform: scale(1, 0.002);
+  }
+  35%{
+    transform: scale(1,0.002);
+    opacity: 1;
+  }
+  50%{
+    transform: scale(1,0.002);
+    opacity: 0;
+  } 
+  85%{
+    transform: scale(1, 0.002);
+    opacity: 1;
+  }
+  100%{
+    transform: scale(1, 1);
+  }
+
+}
 
 .arrowWrapper{
   position: absolute;
@@ -270,7 +288,7 @@
   }      
 
 
-  // Animation sequence /////////
+  // Animation Menue button sequence /////////
   .menuButton.open .menuBurg {
     transform: translateX(-15px);
     background: transparent;
@@ -292,6 +310,8 @@
     }
   }
 
-  // Animation sequence Complete //////
+  // Animation Menue Button sequence Complete //////
+
+
 
   

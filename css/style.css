@@ -359,6 +359,23 @@ svg {
   align-items: center;
   position: relative; }
 
+.animatedCard {
+  animation: switchCard 3s ease-out; }
+
+@keyframes switchCard {
+  10% {
+    transform: scale(1, 0.002); }
+  35% {
+    transform: scale(1, 0.002);
+    opacity: 1; }
+  50% {
+    transform: scale(1, 0.002);
+    opacity: 0; }
+  85% {
+    transform: scale(1, 0.002);
+    opacity: 1; }
+  100% {
+    transform: scale(1, 1); } }
 .arrowWrapper {
   position: absolute;
   margin-left: -25px;
