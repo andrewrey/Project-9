@@ -4,15 +4,27 @@ let menuOpen = false;
 let overlayLi = menuOverlay.querySelectorAll('li');
 const downArrow = document.querySelector('.downArrow');
 const titleCard = document.querySelector('.titleCard');
+const pages = document.querySelectorAll('.page');
 
 
 
+/// Event Listener for switching header page from welcome to projects ///
 downArrow.addEventListener('click', ()=>{
-  titleCard.classList.add('animatedCard')
-  setTimeout(()=> titleCard.classList.remove('animatedCard'), 4000);
+  pages.forEach(page => page.classList.add('animatedCard'));
+  setTimeout(()=> pages.forEach(page => {
+    if(page.classList.contains('show')){
+      page.classList.remove('show');
+      page.classList.add('hide');
+    } else {
+      page.classList.add('show');
+    }
+  }), 2000);
+  setTimeout(()=> pages.forEach(page => page.classList.remove('animatedCard')), 4000);
 });
 
 
+
+/// Event listener that controls opening menu and animates both the menu botton and menue list items///
 button.addEventListener('click', ()=>{
   if (!menuOverlay.classList.contains('hidden')){
     menuOverlay.classList.add('hidden');

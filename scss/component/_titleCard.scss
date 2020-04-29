@@ -21,6 +21,14 @@
   z-index: -1;
 }
 
+.hide {
+  z-index: -100;
+}
+
+.show{
+  z-index: 100;
+}
+
 .titleCard {
   background: url("../img/ocean-clouds.jpg") center center no-repeat;
   background-size: cover;
