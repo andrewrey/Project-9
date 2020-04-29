@@ -2,8 +2,15 @@ const button = document.querySelector('.menuButton');
 const menuOverlay = document.querySelector('.menuOverlay'); 
 let menuOpen = false;
 let overlayLi = menuOverlay.querySelectorAll('li');
+const downArrow = document.querySelector('.downArrow');
+const titleCard = document.querySelector('.titleCard');
 
 
+
+downArrow.addEventListener('click', ()=>{
+  titleCard.classList.add('animatedCard')
+  setTimeout(()=> titleCard.classList.remove('animatedCard'), 4000);
+});
 
 
 button.addEventListener('click', ()=>{
