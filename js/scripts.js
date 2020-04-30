@@ -3,6 +3,7 @@ const menuOverlay = document.querySelector('.menuOverlay');
 let menuOpen = false;
 let overlayLi = menuOverlay.querySelectorAll('li');
 const downArrow = document.querySelector('.downArrow');
+const upArrow = document.querySelector('.upArrowWrap');
 const titleCard = document.querySelector('.titleCard');
 const pages = document.querySelectorAll('.page');
 
@@ -22,6 +23,18 @@ downArrow.addEventListener('click', ()=>{
   setTimeout(()=> pages.forEach(page => page.classList.remove('animatedCard')), 4000);
 });
 
+upArrow.addEventListener('click', ()=>{
+  pages.forEach(page => page.classList.add('animatedCard'));
+  setTimeout(()=> pages.forEach(page => {
+    if(page.classList.contains('show')){
+      page.classList.remove('show');
+      page.classList.add('hide');
+    } else {
+      page.classList.add('show');
+    }
+  }), 2000);
+  setTimeout(()=> pages.forEach(page => page.classList.remove('animatedCard')), 4000);
+})
 
 
 /// Event listener that controls opening menu and animates both the menu botton and menue list items///
