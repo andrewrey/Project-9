@@ -1,3 +1,11 @@
 /* ============================================= */
 /*              Home Grid Styling               */
 /* ============================================= */
+
+
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto);
+}

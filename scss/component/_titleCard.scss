@@ -13,9 +13,7 @@
   right: 0;
   left: 0;
 }
-.headerPage {
-  z-index: 1000;
-}
+
 
 .project {
   z-index: -1;
@@ -28,6 +26,9 @@
 .show{
   z-index: 100;
 }
+
+
+/// Title Card Styles//////////////////
 
 .titleCard {
   background: url("../img/ocean-clouds.jpg") center center no-repeat;
@@ -129,7 +130,7 @@
 
 
 
-
+///// Menu Overlay Styling/////////////
 
 .menuOverlay {
   position: absolute;
@@ -297,7 +298,7 @@
   }      
 
 
-  // Animation Menue button sequence /////////
+  // Animation Menu button sequence /////////
   .menuButton.open .menuBurg {
     transform: translateX(-15px);
     background: transparent;
@@ -319,8 +320,43 @@
     }
   }
 
-  // Animation Menue Button sequence Complete //////
+  // Project Page //////
 
 
+.projectCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  // justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+}
+
+.upArrowWrap {
+  margin-top: 25px;
+}
+
+svg {
+  width: 30px;
+}
+
+.upArrow {
+  fill: red;
+  animation: flash 2s linear infinite;
+}
+
+@keyframes flash {
+0%{
+  fill: white;
+}
+30%{
+  fill: white;
+}
+30.1% ,100%{
+  fill: black;
+}
+}
 
   

@@ -344,9 +344,6 @@ svg {
   right: 0;
   left: 0; }
 
-.headerPage {
-  z-index: 1000; }
-
 .project {
   z-index: -1; }
 
@@ -579,6 +576,32 @@ svg {
     .menuButton.open .menuBurg::after {
       transform: rotate(-45deg) translate(21px, 21px); } }
 
+.projectCard {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  color: white; }
+
+.upArrowWrap {
+  margin-top: 25px; }
+
+svg {
+  width: 30px; }
+
+.upArrow {
+  fill: red;
+  animation: flash 2s linear infinite; }
+
+@keyframes flash {
+  0% {
+    fill: white; }
+  30% {
+    fill: white; }
+  30.1% ,100% {
+    fill: black; } }
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
@@ -588,6 +611,11 @@ svg {
 /* ============================================= */
 /*              Home Grid Styling               */
 /* ============================================= */
+.projectGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(150px, auto); }
+
 /* ============================================= */
 /*              About Grid Styling               */
 /* ============================================= */
