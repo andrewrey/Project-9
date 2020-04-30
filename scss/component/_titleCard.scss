@@ -73,7 +73,7 @@
 .arrowWrapper{
   display: flex;
   margin-top: 5%;
-  @include mq(768px){
+  @media (min-width: 768px) and (min-height: 380px){
     margin-top: 25%;
   }
   justify-content: center;

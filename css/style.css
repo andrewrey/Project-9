@@ -387,7 +387,7 @@ svg {
   justify-content: center;
   align-items: center;
   z-index: 10; }
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (min-height: 380px) {
     .arrowWrapper {
       margin-top: 25%; } }
 
