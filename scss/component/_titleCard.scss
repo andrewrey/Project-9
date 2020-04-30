@@ -15,9 +15,7 @@
 }
 
 
-.project {
-  z-index: -1;
-}
+
 
 .hide {
   z-index: -100;
@@ -343,7 +341,7 @@ svg {
 
 .upArrow {
   fill: white;
-  animation: flash 2s linear infinite;
+  animation: flash 1s linear infinite;
 }
 
 @keyframes flash {
