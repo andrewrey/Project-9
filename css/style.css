@@ -576,6 +576,9 @@ svg {
   background-color: black;
   color: white; }
 
+.upArrowWrap {
+  margin-top: 25px; }
+
 svg {
   width: 30px; }
 
@@ -590,6 +593,15 @@ svg {
     fill: white; }
   30.1% ,100% {
     fill: black; } }
+.projectHead {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.textWrap {
+  width: 90%;
+  margin: 0 auto; }
+
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
@@ -614,6 +626,10 @@ svg {
 .projectMain {
   grid-area: pMain;
   background-color: salmon; }
+
+.projectWrap {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
 
 /* ============================================= */
 /*              About Grid Styling               */
