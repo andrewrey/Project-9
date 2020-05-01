@@ -4,8 +4,24 @@
 
 
 
-.projectGrid {
+.projectCard {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 150px minmax(150px, auto);
   grid-auto-rows: minmax(150px, auto);
+  grid-template-areas: 
+    "pHead"
+    "pMain";
+
+}
+
+.projectHead{
+  grid-area: pHead;
+  background-color: pink;
+}
+
+.projectMain {
+  grid-area: pMain;
+  background-color: salmon;
 }
