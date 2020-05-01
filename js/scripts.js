@@ -6,6 +6,7 @@ const downArrow = document.querySelector('.downArrow');
 const upArrow = document.querySelector('.upArrowWrap');
 const titleCard = document.querySelector('.titleCard');
 const pages = document.querySelectorAll('.page');
+const projectGrid = document.querySelector('.projectGrid');
 
 
 
@@ -68,3 +69,9 @@ button.addEventListener('click', ()=>{
     menuOpen = false;
   }
 });
+
+projectGrid.innerHTML = `
+  <div class='card'>
+    <h2>${projects.project1.name}</h2>
+  </div>
+`;
