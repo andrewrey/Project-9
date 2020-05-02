@@ -602,6 +602,14 @@ svg {
   width: 90%;
   margin: 0 auto; }
 
+.projectWrap figure {
+  width: 150px; }
+
+.projectWrap img {
+  width: 100%;
+  display: block;
+  height: auto; }
+
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
@@ -629,7 +637,7 @@ svg {
 
 .projectWrap {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); }
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); }
 
 /* ============================================= */
 /*              About Grid Styling               */

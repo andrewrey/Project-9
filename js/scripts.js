@@ -70,3 +70,11 @@ button.addEventListener('click', ()=>{
   }
 });
 
+projectWrap.innerHTML = `
+  <div class="card">
+    <figure>
+      <img src="${projects.project1.image}">
+      <figcaption>Personal Profile</figcaption>
+    </figure>
+  </div>
+`;
