@@ -70,15 +70,36 @@ button.addEventListener('click', ()=>{
   }
 });
 
-projectWrap.innerHTML = `
-  <div class="card">
-    <figure>
-      <img src="${projects.project1.image}">
-      <figcaption>Personal Profile</figcaption>
-    </figure>
-  </div>
-`;
+// projectWrap.innerHTML = `
+//   <div class="card">
+//     <figure>
+//       <img src="${projects.project1.image}">
+//       <figcaption>Personal Profile</figcaption>
+//     </figure>
+//   </div>
+// `;
 
-function createCards(){
-  
+function createCard(object){
+  let card = document.createElement('div');
+  let cardFigure = document.createElement('figure');
+  let cardImg = document.createElement('img');
+  let caption = document.createElement('figcaption');
+
+  card.classList.add('card');
+  cardImg.src = object.image;
+  caption.textContent = object.name;
+  cardFigure.appendChild(cardImg);
+  cardFigure.appendChild(caption);
+  card.appendChild(cardFigure);
+  return card;
+
 }
+
+function insertCards(list){
+  let cards = list;
+  cards.forEach(projectCard => {
+    projectWrap.appendChild(createCard(projectCard));
+  });
+}
+
+insertCards(projectList);

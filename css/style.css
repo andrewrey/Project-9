@@ -624,7 +624,7 @@ svg {
   height: 100vh;
   grid-template-columns: 1fr;
   grid-template-rows: 150px minmax(150px, auto);
-  grid-auto-rows: minmax(150px, auto);
+  grid-auto-rows: minmax(300px, auto);
   grid-template-areas: "pHead" "pMain"; }
 
 .projectHead {
