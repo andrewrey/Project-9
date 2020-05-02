@@ -78,3 +78,7 @@ projectWrap.innerHTML = `
     </figure>
   </div>
 `;
+
+function createCards(){
+  
+}
