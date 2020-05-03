@@ -358,15 +358,17 @@ svg {
 
 .textWrap {
   width: 90%;
+  max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .projectWrap figure {
-  width: 150px;
+  width: 200px;
 }
 
 .projectWrap img {
   width: 100%;
   display: block;
-  height: auto;
+  height: 120px;
 }
