@@ -335,14 +335,17 @@ svg {
 /*              Main  Styles                     */
 /* ============================================= */
 .page {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: ghostwhite;
-  position: fixed;
+  position: absolute;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0; }
+
+.frontCover {
+  position: fixed; }
 
 .hide {
   z-index: -100; }
@@ -605,7 +608,10 @@ svg {
   text-align: center; }
 
 .projectWrap figure {
-  width: 200px; }
+  width: 160px; }
+  @media (min-width: 600px) {
+    .projectWrap figure {
+      width: 200px; } }
 
 .projectWrap img {
   width: 100%;
@@ -615,6 +621,194 @@ svg {
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
+* {
+  box-sizing: border-box; }
+
+.animationWrap {
+  width: 200px;
+  position: relative;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 700px; }
+
+/* ================== */
+/* Triangle positions */
+/* ================== */
+.topleft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border-top: 100px solid red;
+  border-right: 100px solid transparent; }
+
+.topright {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-top: 100px solid red;
+  border-left: 100px solid transparent; }
+
+.bottomleft {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid red;
+  border-right: 100px solid transparent; }
+
+.bottomright {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 0;
+  width: 0;
+  border-bottom: 100px solid red;
+  border-left: 100px solid transparent; }
+
+.square {
+  width: 125px;
+  height: 125px;
+  transform: rotate(45deg);
+  background-color: yellow; }
+
+/* =================== */
+/* KeyFrame Animations */
+/* =================== */
+.tlAnimation {
+  animation: trislideLeft 3s linear; }
+
+.trAnimation {
+  animation: trislideRight 3s linear; }
+
+.blAnimation {
+  animation: trislideBottomLeft 3s linear; }
+
+.brAnimation {
+  animation: trislideBottomRight 3s linear; }
+
+/* Top - Left */
+@keyframes trislideLeft {
+  0% {
+    top: 0;
+    left: 0;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  10% {
+    top: -10px;
+    left: -10px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  50% {
+    top: -20px;
+    left: -20px;
+    transform: rotate3d(-1, -1, 0, 360deg);
+    border-top: 100px solid blue; }
+  50.5% {
+    top: -20px;
+    left: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  51% {
+    top: -20px;
+    left: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  80% {
+    top: -10px;
+    left: -10px; }
+  100% {
+    top: 0;
+    left: 0; } }
+/* Top - Right */
+@keyframes trislideRight {
+  0% {
+    top: 0;
+    right: 0;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  10% {
+    top: -10px;
+    right: -10px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  50% {
+    top: -20px;
+    right: -20px;
+    transform: rotate3d(1, -1, 0, 360deg);
+    border-top: 100px solid blue; }
+  50.5% {
+    top: -20px;
+    right: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  51% {
+    top: -20px;
+    right: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  80% {
+    top: -10px;
+    right: -10px; }
+  100% {
+    top: 0;
+    right: 0; } }
+/* Bottom - Left */
+@keyframes trislideBottomLeft {
+  0% {
+    bottom: 0;
+    left: 0;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  10% {
+    bottom: -10px;
+    left: -10px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  50% {
+    bottom: -20px;
+    left: -20px;
+    transform: rotate3d(1, -1, 0, 360deg);
+    border-bottom: 100px solid blue; }
+  50.5% {
+    bottom: -20px;
+    left: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  51% {
+    bottom: -20px;
+    left: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  80% {
+    bottom: -10px;
+    left: -10px; }
+  100% {
+    bottom: 0;
+    left: 0; } }
+/* Bottom - Right */
+@keyframes trislideBottomRight {
+  0% {
+    bottom: 0;
+    right: 0;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  10% {
+    bottom: -10px;
+    right: -10px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  50% {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate3d(-1, -1, 0, 360deg);
+    border-bottom: 100px solid blue; }
+  50.5% {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  51% {
+    bottom: -20px;
+    right: -20px;
+    transform: rotate3d(0, 0, 0, 360deg); }
+  80% {
+    bottom: -10px;
+    right: -10px; }
+  100% {
+    bottom: 0;
+    right: 0; } }
 /* ============================================= */
 /*              Footer Styles                    */
 /* ============================================= */
@@ -623,9 +817,9 @@ svg {
 /* ============================================= */
 .projectCard {
   display: grid;
-  height: 100vh;
+  min-height: 100vh;
   grid-template-columns: 1fr;
-  grid-template-rows: 150px minmax(150px, auto);
+  grid-template-rows: 400px minmax(150px, 1fr);
   grid-auto-rows: minmax(150px, auto);
   grid-template-areas: "pHead" "pMain"; }
 
