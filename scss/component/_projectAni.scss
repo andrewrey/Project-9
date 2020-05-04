@@ -5,9 +5,9 @@
 
 
 .animationWrap {
-  width: 200px;
+  width: 50px;
   position: relative;
-  height: 200px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -24,8 +24,8 @@
   left: 0;
   height: 0;
   width: 0;
-  border-top: 100px solid red;
-  border-right: 100px solid transparent;
+  border-top: 25px solid red;
+  border-right: 25px solid transparent;
 }
 
 
@@ -36,8 +36,8 @@
   right: 0;
   height: 0;
   width: 0;
-  border-top: 100px solid red;
-  border-left: 100px solid transparent;
+  border-top: 25px solid red;
+  border-left: 25px solid transparent;
 }
 
 
@@ -47,8 +47,8 @@
   left: 0;
   height: 0;
   width: 0;
-  border-bottom: 100px solid red;
-  border-right: 100px solid transparent;
+  border-bottom: 25px solid red;
+  border-right: 25px solid transparent;
 }
 
 
@@ -58,15 +58,15 @@
   right: 0;
   height: 0;
   width: 0;
-  border-bottom: 100px solid red;
-  border-left: 100px solid transparent;
+  border-bottom: 25px solid red;
+  border-left: 25px solid transparent;
 }
 
 
 
 .square {
-  width: 125px;
-  height: 125px;
+  width: 31.25px;
+  height: 31.25px;
   transform: rotate(45deg);
   background-color: yellow;
 }
@@ -96,29 +96,29 @@ animation: trislideBottomRight 3s linear;
   transform: rotate3d(0,0,0, 360deg);
 }
 10%{
-  top: -10px;
-  left: -10px;
+  top: -2.5px;
+  left: -2.5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 50%{
-  top: -20px;
-  left: -20px;
+  top: -5px;
+  left: -5px;
   transform: rotate3d(-1,-1,0, 360deg);
-  border-top: 100px solid blue;
+  border-top: 25px solid blue;
 }
 50.5%{
-  top: -20px;
-  left: -20px;
+  top: -5px;
+  left: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 51%{
-  top: -20px;
-  left: -20px;
+  top: -5px;
+  left: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 80%{
-  top: -10px;
-  left: -10px;
+  top: -2.5px;
+  left: -2.5px;
 }
 100%{
   top: 0;
@@ -135,30 +135,30 @@ animation: trislideBottomRight 3s linear;
   transform: rotate3d(0,0,0,360deg);
 }
 10%{
-  top: -10px;
-  right: -10px;
+  top: -2.5px;
+  right: -2.5px;
   transform: rotate3d(0,0,0,360deg);
 }
 50%{
-  top: -20px;
-  right: -20px;
+  top: -5px;
+  right: -5px;
   transform: rotate3d(1,-1,0,360deg);
-  border-top: 100px solid blue;
+  border-top: 25px solid blue;
 }
 50.5%{
-  top:-20px;
-  right: -20px;
+  top:-5px;
+  right: -5px;
   transform: rotate3d(0,0,0,360deg);
 
 }
 51%{ 
-  top:-20px;
-  right: -20px;
+  top:-5px;
+  right: -5px;
   transform: rotate3d(0,0,0,360deg);
 }
 80%{
-  top: -10px;
-  right: -10px;
+  top: -2.5px;
+  right: -2.5px;
 }
 100%{
   top: 0;
@@ -175,29 +175,29 @@ animation: trislideBottomRight 3s linear;
   transform: rotate3d(0,0,0, 360deg);
 }
 10%{
-  bottom: -10px;
-  left: -10px;
+  bottom: -2.5px;
+  left: -2.5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 50%{
-  bottom: -20px;
-  left: -20px;
+  bottom: -5px;
+  left: -5px;
   transform: rotate3d(1,-1,0, 360deg);
-  border-bottom: 100px solid blue;
+  border-bottom: 25px solid blue;
 }
 50.5%{
-  bottom: -20px;
-  left: -20px;
+  bottom: -5px;
+  left: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 51%{
-  bottom: -20px;
-  left: -20px;
+  bottom: -5px;
+  left: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 80%{
-  bottom: -10px;
-  left: -10px;
+  bottom: -2.5px;
+  left: -2.5px;
 }
 100%{
   bottom: 0;
@@ -215,29 +215,29 @@ animation: trislideBottomRight 3s linear;
   transform: rotate3d(0,0,0, 360deg);
 }
 10%{
-  bottom: -10px;
-  right: -10px;
+  bottom: -2.5px;
+  right: -2.5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 50%{
-  bottom: -20px;
-  right: -20px;
+  bottom: -5px;
+  right: -5px;
   transform: rotate3d(-1,-1,0, 360deg);
-  border-bottom: 100px solid blue;
+  border-bottom: 25px solid blue;
 }
 50.5%{
-  bottom: -20px;
-  right: -20px;
+  bottom: -5px;
+  right: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 51%{
-  bottom: -20px;
-  right: -20px;
+  bottom: -5px;
+  right: -5px;
   transform: rotate3d(0,0,0, 360deg);
 }
 80%{
-  bottom: -10px;
-  right: -10px;
+  bottom: -2.5px;
+  right: -2.5px;
 }
 100%{
   bottom: 0;
