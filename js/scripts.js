@@ -7,6 +7,7 @@ const upArrow = document.querySelector('.upArrowWrap');
 const titleCard = document.querySelector('.titleCard');
 const pages = document.querySelectorAll('.page');
 const projectWrap = document.querySelector('.projectWrap');
+const projectSection = document.querySelector('.project');
 
 
 // ================== //
@@ -57,6 +58,7 @@ downArrow.addEventListener('click', ()=>{
       page.classList.add('show');
     }
   }), 2000);
+  setTimeout(()=>projectSection.style.visibility = 'visible', 2000);
   setTimeout(()=> pages.forEach(page => page.classList.remove('animatedCard')), 4000);
 });
 
@@ -70,6 +72,7 @@ upArrow.addEventListener('click', ()=>{
       page.classList.add('show');
     }
   }), 2000);
+  setTimeout(()=>projectSection.style.visibility = 'hidden', 2000);
   setTimeout(()=> pages.forEach(page => page.classList.remove('animatedCard')), 4000);
 })
 
