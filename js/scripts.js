@@ -29,6 +29,9 @@ icon.addEventListener('click', ()=>{
   triTopRight.classList.add('trAnimation');
   triBottomLeft.classList.add('blAnimation');
   triBottomRight.classList.add('brAnimation');
+  while(projectWrap.firstChild){
+    projectWrap.removeChild(projectWrap.firstChild);
+  }
   setTimeout(()=>{
     triangles.forEach(tri =>{
       if(tri.classList.contains('tlAnimation')){
