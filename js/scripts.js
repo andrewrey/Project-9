@@ -80,7 +80,7 @@ upArrow.addEventListener('click', ()=>{
 })
 
 
-/// Event listener that controls opening menu and animates both the menu botton and menue list items///
+/// Event listener that controls opening menu and animates both the menu botton and menu list items///
 button.addEventListener('click', ()=>{
   if (!menuOverlay.classList.contains('hidden')){
     menuOverlay.classList.add('hidden');
@@ -112,6 +112,13 @@ button.addEventListener('click', ()=>{
   }
 });
 
+
+
+
+
+// ================================================ //
+//         Adding Cards / Descript Cards            //
+// ================================================ //
 // projectWrap.innerHTML = `
 //   <div class="card">
 //     <figure>
@@ -121,7 +128,9 @@ button.addEventListener('click', ()=>{
 //   </div>
 // `;
 
-function createCard(object){
+
+//    Create Cards ----- Function  //
+function createPhotoCard(object){
   let card = document.createElement('div');
   let cardFigure = document.createElement('figure');
   let cardImg = document.createElement('img');
@@ -137,10 +146,22 @@ function createCard(object){
 
 }
 
+
+//     Create Description Cards ------ Function //
+function createDescriptCards(object){
+  
+}
+
+
+
+
+
+
+//      Insert Cards to screen ----- Function //
 function insertCards(list){
   let cards = list;
   cards.forEach(projectCard => {
-    projectWrap.appendChild(createCard(projectCard));
+    projectWrap.appendChild(createPhotoCard(projectCard));
   });
 }
 
