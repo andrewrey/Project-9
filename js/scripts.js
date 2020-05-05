@@ -156,7 +156,7 @@ function createDescriptCards(object){
   let articleElement = document.createElement('article');
   articleElement.innerHTML = `
     <h2>${object.name}</h2>
-    <img src="${object.image}">
+    <img class="descriptImg" src="${object.image}">
     <p>${object.description}</p>
   `;
   let imageWrapper = document.createElement('div');

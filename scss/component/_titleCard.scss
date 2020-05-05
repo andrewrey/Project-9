@@ -387,11 +387,14 @@ svg {
 
 .descriptCard{
   width: 220px;
+  height: 450px;
   box-shadow: 3px 9px 28px -6px rgba(255,255,255,1);
   background-color: #3F0E46;
   border-radius: 10px;
 
   article {
+    width: 100%;
+    height: 100%;
     font-size: .8rem;
     display: flex;
     flex-direction: column;
@@ -400,15 +403,16 @@ svg {
       width: 100%;
       height: auto;
     }
+    .imageHolder {
+      margin-top: auto;
+    }
     .techIcon{
       display: inline-block;
       width: 35px;
       height: auto;
       padding-bottom: 10px;
     }
-    .imageHolder {
-      margin-top: auto;
-    }
+   
   }
 
 }
