@@ -24,11 +24,12 @@
 
 .projectMain {
   grid-area: pMain;
-  background-color: #4d5057;
+  background-color: black;
 }
 
 .projectWrap{
   display: grid;
+  justify-items: center;
   row-gap: 10px;
   @include mq(768px){
     column-gap: 10px;

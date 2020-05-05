@@ -653,6 +653,10 @@ svg {
       height: auto;
       padding-bottom: 10px; }
 
+.aboutTextWrap {
+  padding-left: 20px;
+  margin-bottom: 50px; }
+
 /* ============================================= */
 /*              Main  Styles                     */
 /* ============================================= */
@@ -678,7 +682,7 @@ svg {
   left: 0;
   height: 0;
   width: 0;
-  border-top: 25px solid #40798C;
+  border-top: 25px solid #fff857;
   border-right: 25px solid transparent; }
 
 .topright {
@@ -687,7 +691,7 @@ svg {
   right: 0;
   height: 0;
   width: 0;
-  border-top: 25px solid #40798C;
+  border-top: 25px solid #fff857;
   border-left: 25px solid transparent; }
 
 .bottomleft {
@@ -696,7 +700,7 @@ svg {
   left: 0;
   height: 0;
   width: 0;
-  border-bottom: 25px solid #40798C;
+  border-bottom: 25px solid #fff857;
   border-right: 25px solid transparent; }
 
 .bottomright {
@@ -705,14 +709,14 @@ svg {
   right: 0;
   height: 0;
   width: 0;
-  border-bottom: 25px solid #40798C;
+  border-bottom: 25px solid #fff857;
   border-left: 25px solid transparent; }
 
 .square {
   width: 28px;
   height: 28px;
   transform: rotate(45deg);
-  background-color: white; }
+  background-color: #39ff14; }
 
 /* =================== */
 /* KeyFrame Animations */
@@ -729,6 +733,26 @@ svg {
 .brAnimation {
   animation: trislideBottomRight 3s linear; }
 
+.squareAnimation {
+  animation: squareSpin 3s linear; }
+
+/*  Square - Centre */
+@keyframes squareSpin {
+  0% {
+    background-color: #FFF857;
+    transform: rotate(45deg) rotate3d(0, 0, 0, 360deg); }
+  25% {
+    background-color: #df00fe;
+    transform: rotate(45deg) rotate3d(0, 0, 0, 360deg); }
+  50% {
+    background-color: #a117f2;
+    transform: rotate(45deg) rotate3d(1, 1, 0, 360deg); }
+  75% {
+    background-color: lightcoral;
+    transform: rotate(45deg) rotate3d(0, 0, 0, 360deg); }
+  100% {
+    background-color: #3EFF15;
+    transform: rotate(45deg) rotate3d(0, 0, 0, 360deg); } }
 /* Top - Left */
 @keyframes trislideLeft {
   0% {
@@ -865,10 +889,11 @@ svg {
 
 .projectMain {
   grid-area: pMain;
-  background-color: #4d5057; }
+  background-color: black; }
 
 .projectWrap {
   display: grid;
+  justify-items: center;
   row-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); }
   @media (min-width: 768px) {

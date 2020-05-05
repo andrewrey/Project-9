@@ -20,6 +20,7 @@ const triTopRight = document.querySelector('.topright');
 const triBottomLeft = document.querySelector('.bottomleft');
 const triBottomRight = document.querySelector('.bottomright');
 const triangles = document.querySelectorAll('.tri');
+const square = document.querySelector('.square');
 
 let flag = false;
 
@@ -30,6 +31,7 @@ icon.addEventListener('click', ()=>{
   triTopRight.classList.add('trAnimation');
   triBottomLeft.classList.add('blAnimation');
   triBottomRight.classList.add('brAnimation');
+  square.classList.add('squareAnimation');
   while(projectWrap.firstChild){
     projectWrap.removeChild(projectWrap.firstChild);
   }
@@ -42,6 +44,7 @@ icon.addEventListener('click', ()=>{
   }
   
   setTimeout(()=>{
+    square.classList.remove('squareAnimation');
     triangles.forEach(tri =>{
       if(tri.classList.contains('tlAnimation')){
         tri.classList.remove('tlAnimation');
