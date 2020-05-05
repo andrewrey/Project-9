@@ -38,6 +38,7 @@ icon.addEventListener('click', ()=>{
     flag = true;
   } else {
     insertCards(projectList, createPhotoCard);
+    flag = false;
   }
   
   setTimeout(()=>{
