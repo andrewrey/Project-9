@@ -155,7 +155,9 @@ function createDescriptCards(object){
   descriptionCard.classList = "descriptCard";
   let articleElement = document.createElement('article');
   articleElement.innerHTML = `
-    <h2>${object.name}</h2>
+    <div class="cardName">
+      <h2>${object.name}</h2>
+    </div>
     <img class="descriptImg" src="${object.image}">
     <p>${object.description}</p>
   `;
