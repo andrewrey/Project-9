@@ -860,6 +860,7 @@ svg {
 
 .projectWrap {
   display: grid;
+  row-gap: 10px;
   grid-template-columns: repeat(auto-fit, minmax(225px, 1fr)); }
 
 /* ============================================= */
