@@ -622,19 +622,15 @@ svg {
   visibility: hidden; }
 
 .descriptCard {
-  width: 250px;
+  width: 220px;
   box-shadow: 3px 9px 28px -6px white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background-color: #3F0E46;
   border-radius: 10px; }
-  .descriptCard img {
-    margin: 0 auto; }
   .descriptCard article {
     font-size: .8rem;
-    width: 200px;
-    text-align: left; }
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
     .descriptCard article img {
       width: 100%;
       height: auto; }
@@ -643,6 +639,8 @@ svg {
       width: 35px;
       height: auto;
       padding-bottom: 10px; }
+    .descriptCard article .imageHolder {
+      margin-top: auto; }
 
 /* ============================================= */
 /*              Main  Styles                     */

@@ -32,6 +32,7 @@ icon.addEventListener('click', ()=>{
   while(projectWrap.firstChild){
     projectWrap.removeChild(projectWrap.firstChild);
   }
+  insertCards(projectList, createDescriptCards);
   setTimeout(()=>{
     triangles.forEach(tri =>{
       if(tri.classList.contains('tlAnimation')){
@@ -132,7 +133,47 @@ button.addEventListener('click', ()=>{
 // `;
 
 
-// Description Card
+// Description Card        //
+/* 
+<div class='descriptCard'>
+  <article>
+    <h2>Name of project</h2>
+    <img src="img/projectImg/project1.png">
+    <p>Description of project and what it did and lots of information to that discuses such things hahahaha</p>
+    <h3>Technologies Used</h3>
+    <img class="techIcon" src="img/techImg/icons8-html-5-48.png" alt="html logo">
+    <img class="techIcon" src="img/techImg/icons8-css3-48.png" alt="css logo">
+    <img class="techIcon" src="img/techImg/icons8-javascript-logo-50.png" alt="js logo">
+  </article>
+</div> 
+*/
+
+
+//     Create Description Cards ------ Function //
+function createDescriptCards(object){
+  let descriptionCard = document.createElement('div');
+  descriptionCard.classList = "descriptCard";
+  let articleElement = document.createElement('article');
+  articleElement.innerHTML = `
+    <h2>${object.name}</h2>
+    <img src="${object.image}">
+    <p>${object.description}</p>
+  `;
+  let imageWrapper = document.createElement('div');
+  imageWrapper.classList = 'imageHolder';
+  imageWrapper.innerHTML = `<h3>Technologies Used</h3>`
+  Object.keys(object.technology).forEach((key, index)=>{
+    let imageElement = document.createElement('img');
+    imageElement.classList = "techIcon";
+    imageElement.src = object.technology[key];
+    imageWrapper.appendChild(imageElement);
+   
+  });
+  articleElement.appendChild(imageWrapper);
+  descriptionCard.appendChild(articleElement);
+  return descriptionCard;
+  
+}
 
 
 
@@ -155,22 +196,14 @@ function createPhotoCard(object){
 }
 
 
-//     Create Description Cards ------ Function //
-function createDescriptCards(object){
-  
-}
-
-
-
-
-
-
 //      Insert Cards to screen ----- Function //
-function insertCards(list){
+function insertCards(list, callback){
   let cards = list;
   cards.forEach(projectCard => {
-    projectWrap.appendChild(createPhotoCard(projectCard));
+    projectWrap.appendChild(callback(projectCard));
   });
 }
 
-insertCards(projectList);
+insertCards(projectList, createPhotoCard);
+
+
