@@ -666,7 +666,8 @@ svg {
   display: flex;
   justify-content: center;
   align-items: center;
-  perspective: 700px; }
+  perspective: 700px;
+  cursor: pointer; }
 
 /* ================== */
 /* Triangle positions */
@@ -677,7 +678,7 @@ svg {
   left: 0;
   height: 0;
   width: 0;
-  border-top: 25px solid red;
+  border-top: 25px solid #40798C;
   border-right: 25px solid transparent; }
 
 .topright {
@@ -686,7 +687,7 @@ svg {
   right: 0;
   height: 0;
   width: 0;
-  border-top: 25px solid red;
+  border-top: 25px solid #40798C;
   border-left: 25px solid transparent; }
 
 .bottomleft {
@@ -695,7 +696,7 @@ svg {
   left: 0;
   height: 0;
   width: 0;
-  border-bottom: 25px solid red;
+  border-bottom: 25px solid #40798C;
   border-right: 25px solid transparent; }
 
 .bottomright {
@@ -704,14 +705,14 @@ svg {
   right: 0;
   height: 0;
   width: 0;
-  border-bottom: 25px solid red;
+  border-bottom: 25px solid #40798C;
   border-left: 25px solid transparent; }
 
 .square {
-  width: 31.25px;
-  height: 31.25px;
+  width: 28px;
+  height: 28px;
   transform: rotate(45deg);
-  background-color: yellow; }
+  background-color: white; }
 
 /* =================== */
 /* KeyFrame Animations */
@@ -742,7 +743,7 @@ svg {
     top: -5px;
     left: -5px;
     transform: rotate3d(-1, -1, 0, 360deg);
-    border-top: 25px solid blue; }
+    border-top: 25px solid whitesmoke; }
   50.5% {
     top: -5px;
     left: -5px;
@@ -771,7 +772,7 @@ svg {
     top: -5px;
     right: -5px;
     transform: rotate3d(1, -1, 0, 360deg);
-    border-top: 25px solid blue; }
+    border-top: 25px solid whitesmoke; }
   50.5% {
     top: -5px;
     right: -5px;
@@ -800,7 +801,7 @@ svg {
     bottom: -5px;
     left: -5px;
     transform: rotate3d(1, -1, 0, 360deg);
-    border-bottom: 25px solid blue; }
+    border-bottom: 25px solid whitesmoke; }
   50.5% {
     bottom: -5px;
     left: -5px;
@@ -829,7 +830,7 @@ svg {
     bottom: -5px;
     right: -5px;
     transform: rotate3d(-1, -1, 0, 360deg);
-    border-bottom: 25px solid blue; }
+    border-bottom: 25px solid whitesmoke; }
   50.5% {
     bottom: -5px;
     right: -5px;
@@ -860,11 +861,11 @@ svg {
 
 .projectHead {
   grid-area: pHead;
-  background-color: black; }
+  background-color: #4d5057; }
 
 .projectMain {
   grid-area: pMain;
-  background-color: black; }
+  background-color: #4d5057; }
 
 .projectWrap {
   display: grid;

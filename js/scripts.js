@@ -21,6 +21,7 @@ const triBottomLeft = document.querySelector('.bottomleft');
 const triBottomRight = document.querySelector('.bottomright');
 const triangles = document.querySelectorAll('.tri');
 
+let flag = false;
 
 
 
@@ -32,7 +33,13 @@ icon.addEventListener('click', ()=>{
   while(projectWrap.firstChild){
     projectWrap.removeChild(projectWrap.firstChild);
   }
-  insertCards(projectList, createDescriptCards);
+  if(!flag){
+    insertCards(projectList, createDescriptCards);
+    flag = true;
+  } else {
+    insertCards(projectList, createPhotoCard);
+  }
+  
   setTimeout(()=>{
     triangles.forEach(tri =>{
       if(tri.classList.contains('tlAnimation')){
