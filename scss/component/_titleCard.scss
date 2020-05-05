@@ -383,3 +383,33 @@ svg {
 .project{
   visibility: hidden;
 }
+
+
+.descriptCard{
+  width: 250px;
+  box-shadow: 3px 9px 28px -6px rgba(255,255,255,1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #3F0E46;
+  border-radius: 10px;
+  img{
+    margin: 0 auto;
+  }
+  article {
+    font-size: .8rem;
+    width: 200px;
+    text-align: left;
+    img{
+      width: 100%;
+      height: auto;
+    }
+    .techIcon{
+      display: inline-block;
+      width: 35px;
+      height: auto;
+      padding-bottom: 10px;
+    }
+  }
+
+}

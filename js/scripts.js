@@ -119,6 +119,9 @@ button.addEventListener('click', ()=>{
 // ================================================ //
 //         Adding Cards / Descript Cards            //
 // ================================================ //
+
+
+//   Photo Card        //
 // projectWrap.innerHTML = `
 //   <div class="card">
 //     <figure>
@@ -127,6 +130,11 @@ button.addEventListener('click', ()=>{
 //     </figure>
 //   </div>
 // `;
+
+
+// Description Card
+
+
 
 
 //    Create Cards ----- Function  //
