@@ -33,7 +33,10 @@
 #about {
   .textWrap{
     width: 80%;
-    margin: 0 auto;
+    margin: 5px auto;
+    background-color: powderblue;
+    border-radius: 10px;
+    padding: 10px;
   }
   header{
     grid-area: aboutHead;
@@ -56,9 +59,24 @@
     }
   }
 
+
+
+
   main{
     grid-area: aboutMain;
     background-color: lightskyblue;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(400px, 1fr) minmax(150px, 1fr);
+    grid-template-areas: 
+      "aboutText"
+      "goalText";
+    @include mq(768px){
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: minmax(400px, 1fr);
+      grid-template-areas: 
+        "aboutText goalText";
+    }
   }
   footer{
     grid-area: aboutFooter;
@@ -75,6 +93,17 @@
     }
   }
 } 
+
+.aboutText{
+  grid-area: aboutText;
+  background-color: khaki;
+}
+
+.goalText{
+  grid-area: goalText;
+  background-color: moccasin;
+}
+
 
 .aboutChart {
   width: 100%;

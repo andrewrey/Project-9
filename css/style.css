@@ -926,7 +926,10 @@ footer {
 
 #about .textWrap {
   width: 80%;
-  margin: 0 auto; }
+  margin: 5px auto;
+  background-color: powderblue;
+  border-radius: 10px;
+  padding: 10px; }
 #about header {
   grid-area: aboutHead;
   background-color: #40798C;
@@ -946,7 +949,16 @@ footer {
       position: relative; } }
 #about main {
   grid-area: aboutMain;
-  background-color: lightskyblue; }
+  background-color: lightskyblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(400px, 1fr) minmax(150px, 1fr);
+  grid-template-areas: "aboutText" "goalText"; }
+  @media (min-width: 768px) {
+    #about main {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: minmax(400px, 1fr);
+      grid-template-areas: "aboutText goalText"; } }
 #about footer {
   grid-area: aboutFooter;
   background-color: #4D5057; }
@@ -958,6 +970,14 @@ footer {
   #about nav li {
     list-style: none;
     margin-bottom: 20px; }
+
+.aboutText {
+  grid-area: aboutText;
+  background-color: khaki; }
+
+.goalText {
+  grid-area: goalText;
+  background-color: moccasin; }
 
 .aboutChart {
   width: 100%; }
