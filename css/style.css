@@ -943,10 +943,16 @@ footer {
       position: static; } }
 #about .about {
   grid-area: about;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: lightsalmon; }
   @media (min-width: 768px) {
     #about .about {
       position: relative; } }
+  #about .about .aWrapper {
+    width: 80%; }
 #about main {
   grid-area: aboutMain;
   background-color: lightskyblue;

@@ -53,10 +53,18 @@
 
   .about {
     grid-area: about;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: lightsalmon;
     @include mq(768px){
       position: relative;
     }
+   .aWrapper{
+     width: 80%;
+   }
+
   }
 
 
