@@ -926,6 +926,7 @@ footer {
 
 #about .textWrap {
   width: 80%;
+  min-height: 600px;
   margin: 5px auto;
   background-color: powderblue;
   border-radius: 10px;

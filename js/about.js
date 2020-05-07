@@ -8,7 +8,7 @@ let doughnutChart = new Chart(jobChart, {
   type: 'doughnut',
   data: {
     datasets:[{
-      data: [1, 3, 5, 6],
+      data: [24, 12, 36, (12*6)],
       backgroundColor: [
           'rgb(62, 209, 145)',
           'rgb(209, 62, 200)',
@@ -17,10 +17,10 @@ let doughnutChart = new Chart(jobChart, {
       ]
     }],
     labels: [
-      'pilot',
-      'cook',
-      'hairdresser',
-      'ceo'
+      'Business Development Consultant',
+      'Business Analyst',
+      'President / CEO',
+      'Vault Cashier'
     ]
   },
   options: {
