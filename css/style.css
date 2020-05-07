@@ -953,6 +953,10 @@ footer {
       position: relative; } }
   #about .about .aWrapper {
     width: 80%; }
+    #about .about .aWrapper span {
+      background-color: powderblue;
+      border-radius: 5px;
+      padding: 0 5px; }
 #about main {
   grid-area: aboutMain;
   background-color: lightskyblue;
