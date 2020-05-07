@@ -658,8 +658,17 @@ svg {
   margin-bottom: 50px; }
 
 /* ============================================= */
-/*              Main  Styles                     */
+/*              Contact  Styles                  */
 /* ============================================= */
+#contact {
+  background-color: slategrey; }
+  #contact ul {
+    list-style-type: none; }
+    #contact ul li {
+      display: inline-block; }
+      #contact ul li a {
+        display: block; }
+
 * {
   box-sizing: border-box; }
 
