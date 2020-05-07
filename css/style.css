@@ -662,10 +662,23 @@ svg {
 /* ============================================= */
 #contact {
   background-color: slategrey; }
+  #contact .contactWrap {
+    max-width: 1200px;
+    margin: 0 auto; }
+  #contact header {
+    width: 100%;
+    background-image: url("../img/leaf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px; }
   #contact ul {
-    list-style-type: none; }
+    margin: 0;
+    list-style-type: none;
+    padding: 0; }
     #contact ul li {
-      display: inline-block; }
+      display: inline-block;
+      margin: 5px; }
       #contact ul li a {
         display: block; }
 

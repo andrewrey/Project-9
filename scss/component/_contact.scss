@@ -4,11 +4,26 @@
 
 
 #contact{
+  .contactWrap{
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  header{
+    width: 100%;
+    background-image: url("../img/leaf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 300px;
+  }
   background-color: slategrey;
   ul{
+    margin: 0;
     list-style-type: none;
+    padding: 0;
     li{
       display: inline-block;
+      margin: 5px;
       a{
         display: block;
       }
