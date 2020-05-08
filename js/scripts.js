@@ -137,7 +137,9 @@ button.addEventListener('click', ()=>{
 // projectWrap.innerHTML = `
 //   <div class="card">
 //     <figure>
-//       <img src="${projects.project1.image}">
+//       <a href="object.link">
+//         <img src="${projects.project1.image}">
+//       </a>
 //       <figcaption>Personal Profile</figcaption>
 //     </figure>
 //   </div>
@@ -173,7 +175,9 @@ function createDescriptCards(object){
     <div class="cardName">
       <h2>${object.name}</h2>
     </div>
-    <img class="descriptImg" src="${object.image}">
+    <a href=${object.link} target="_blank">
+      <img class="descriptImg" src="${object.image}">
+    </a>
     <p>${object.description}</p>
   `;
   let imageWrapper = document.createElement('div');
@@ -198,6 +202,7 @@ function createDescriptCards(object){
 //    Create Cards ----- Function  //
 function createPhotoCard(object){
   let card = document.createElement('div');
+  let anchor = document.createElement('a');
   let cardFigure = document.createElement('figure');
   let cardImg = document.createElement('img');
   let caption = document.createElement('figcaption');
@@ -205,7 +210,10 @@ function createPhotoCard(object){
   card.classList.add('card');
   cardImg.src = object.image;
   caption.textContent = object.name;
-  cardFigure.appendChild(cardImg);
+  anchor.href = object.link;
+  anchor.target = "_blank"
+  anchor.appendChild(cardImg);
+  cardFigure.appendChild(anchor);
   cardFigure.appendChild(caption);
   card.appendChild(cardFigure);
   return card;

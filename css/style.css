@@ -632,6 +632,11 @@ svg {
 .project {
   visibility: hidden; }
 
+.card a {
+  display: block; }
+.card figcaption {
+  padding-top: 10px; }
+
 .descriptCard {
   width: 200px;
   height: 450px;
@@ -655,7 +660,8 @@ svg {
       width: 95%; }
     .descriptCard article img {
       width: 95%;
-      height: auto; }
+      height: auto;
+      margin: 0 auto; }
     .descriptCard article .imageHolder {
       margin-top: auto; }
     .descriptCard article .techIcon {

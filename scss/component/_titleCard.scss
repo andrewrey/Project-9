@@ -399,6 +399,16 @@ svg {
   visibility: hidden;
 }
 
+.card {
+  a{
+    display: block;
+  }
+  figcaption{
+    padding-top: 10px;
+  }
+}
+
+
 
 .descriptCard{
   .cardName{
@@ -427,6 +437,7 @@ svg {
     img{
       width: 95%;
       height: auto;
+      margin: 0 auto;
     }
     .imageHolder {
       margin-top: auto;
