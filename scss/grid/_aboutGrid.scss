@@ -5,10 +5,10 @@
 
 #about .aboutWrapper{
   display: grid;
-  min-height: 100vh;
   margin: 0 auto;
   grid-template-columns: 1fr;
   @include mq(768px){
+    min-height: 100vh;
     grid-template-columns: 1fr 1fr;
   }
   grid-template-rows: minmax(350px, 1fr);
@@ -31,13 +31,19 @@
 }
 
 #about {
+
   .textWrap{
     width: 80%;
-    min-height: 600px;
+    min-height: 630px;
     margin: 5px auto;
     background-color: powderblue;
     border-radius: 10px;
     padding: 10px;
+  }
+  .goals{
+    @media (max-width: 768px){
+      min-height: 400px;
+    }
   }
   header{
     grid-area: aboutHead;
@@ -81,7 +87,7 @@
     background-color: lightskyblue;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: minmax(400px, 1fr) minmax(150px, 1fr);
+    grid-template-rows: minmax(400px, 1fr) 450px;
     grid-template-areas: 
       "aboutText"
       "goalText";
