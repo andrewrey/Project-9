@@ -149,10 +149,17 @@
 .menuWrap {
   .svgLinks{
     display: block;
+    a{
+      display: inline-block;
+    }
+    svg{
+      margin: 5px;
+    }
   }
   ul{
     padding: 0;
     margin-bottom: 5px;
+    text-align: center;
   }
   border: white 1px solid;
   width: 70%;
