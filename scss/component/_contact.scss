@@ -5,15 +5,23 @@
 
 #contact{
   form{
-    input{
+    width: 80%;
+    margin: 0 auto;
+    input,
+    textarea {
       display: block;
       margin-bottom: 25px;
+      width: 100%;
+    }
+    input{
+      height: 40px;
     }
   }
   svg path {
     fill: blue;
   }
   .contactWrap{
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto;
   }

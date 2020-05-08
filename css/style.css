@@ -662,12 +662,20 @@ svg {
 /* ============================================= */
 #contact {
   background-color: slategrey; }
-  #contact form input {
-    display: block;
-    margin-bottom: 25px; }
+  #contact form {
+    width: 80%;
+    margin: 0 auto; }
+    #contact form input,
+    #contact form textarea {
+      display: block;
+      margin-bottom: 25px;
+      width: 100%; }
+    #contact form input {
+      height: 40px; }
   #contact svg path {
     fill: blue; }
   #contact .contactWrap {
+    width: 80%;
     max-width: 1200px;
     margin: 0 auto; }
   #contact header {
