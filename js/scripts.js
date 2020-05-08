@@ -148,13 +148,17 @@ button.addEventListener('click', ()=>{
 /* 
 <div class='descriptCard'>
   <article>
-    <h2>Name of project</h2>
+    <div class="cardName">
+      <h2>Name of project</h2>
+    </div> 
     <img src="img/projectImg/project1.png">
     <p>Description of project and what it did and lots of information to that discuses such things hahahaha</p>
-    <h3>Technologies Used</h3>
-    <img class="techIcon" src="img/techImg/icons8-html-5-48.png" alt="html logo">
-    <img class="techIcon" src="img/techImg/icons8-css3-48.png" alt="css logo">
-    <img class="techIcon" src="img/techImg/icons8-javascript-logo-50.png" alt="js logo">
+     <div class="imageHolder"> 
+      <h3>Technologies Used</h3>
+      <img class="techIcon" src="img/techImg/icons8-html-5-48.png" alt="html logo">
+      <img class="techIcon" src="img/techImg/icons8-css3-48.png" alt="css logo">
+      <img class="techIcon" src="img/techImg/icons8-javascript-logo-50.png" alt="js logo">
+    </div>
   </article>
 </div> 
 */

@@ -4,7 +4,7 @@
 const projects = {
   project1: {
     name: "My Personal Profile Page",
-    link: "",
+    link: "https://andrewrey.github.io/project1/index.html",
     image: "img/projectImg/project1.png",
     description: "Treehouse Project 1: Modified code for a basic webpage. Added Photos, text, styling, and video background.",
     plateform: 'TeamTreeHouse',
@@ -15,7 +15,7 @@ const projects = {
   },
   project2: {
     name: "Mobile-first Responsive Layout",
-    link: "",
+    link: "https://andrewrey.github.io/Project-2/index.html",
     image: "img/projectImg/project2.png",
     description: "Built a responsive, mobile-first layout using HTML and CSS. The responsive design adjusts to accommodate small, medium and large screens using min-width media queries.",
     plateform: 'TeamTreeHouse',
@@ -27,7 +27,7 @@ const projects = {
   },
   project3: {
     name: "An Online Registratoin Form",
-    link: "",
+    link: "https://andrewrey.github.io/project3/index.html",
     image: "img/projectImg/project3.png",
     description:"Built a responsive, mobile-friendly resgistration form using HTML form input types and attributes. This form uses a mobile-first approach with media queries allowing for both desktop and mobile viewing.",
     plateform: 'TeamTreeHouse',
@@ -38,7 +38,7 @@ const projects = {
   },
   project4: {
     name: "Web Style Guide",
-    link: "",
+    link: "https://andrewrey.github.io/Project-4/index.html",
     image: "img/projectImg/project4.png",
     description:"TeamTreeHouse provided a completed page which needed it's CSS to be convereted into SASS. Completed this by breaking the SASS into several SASS partial files. Took advantage of using SASS variables and Mixins",
     plateform: 'TeamTreeHouse',
@@ -105,8 +105,9 @@ const projects = {
 
 const projectList = [
   {
+    projectNumber: 1,
     name: "My Personal Profile Page",
-    link: "",
+    link: "https://andrewrey.github.io/project1/index.html",
     image: "img/projectImg/project1.png",
     description: "Treehouse Project 1: Modified code for a basic webpage. Added Photos, text, styling, and video background.",
     plateform: 'TeamTreeHouse',
@@ -116,8 +117,9 @@ const projectList = [
     }
   },
   {
+    projectNumber: 2,
     name: "Mobile-first Responsive Layout",
-    link: "",
+    link: "https://andrewrey.github.io/Project-2/index.html",
     image: "img/projectImg/project2.png",
     description: "Built a responsive, mobile-first layout using HTML and CSS. The responsive design adjusts to accommodate small, medium and large screens using min-width media queries.",
     plateform: 'TeamTreeHouse',
@@ -126,8 +128,9 @@ const projectList = [
       css: "img/techImg/icons8-css3-48.png"
     }
   },{
+    projectNumber: 3,
     name: "An Online Registratoin Form",
-    link: "",
+    link: "https://andrewrey.github.io/project3/index.html",
     image: "img/projectImg/project3.png",
     description:"Built a responsive, mobile-friendly resgistration form using HTML form input types and attributes. This form uses a mobile-first approach with media queries allowing for both desktop and mobile viewing.",
     plateform: 'TeamTreeHouse',
@@ -136,8 +139,9 @@ const projectList = [
       css: "img/techImg/icons8-css3-48.png"
     }
   },{
+    projectNumber: 4,
     name: "Web Style Guide",
-    link: "",
+    link: "https://andrewrey.github.io/Project-4/index.html",
     image: "img/projectImg/project4.png",
     description:"TeamTreeHouse provided a completed page which needed it's CSS to be convereted into SASS. Completed this by breaking the SASS into several SASS partial files. Took advantage of using SASS variables and Mixins",
     plateform: 'TeamTreeHouse',
@@ -147,6 +151,7 @@ const projectList = [
       sass: "img/techImg/icons8-sass-48.png"
     }
   },{
+    projectNumber: 5,
     name: "An Interactive Photo Gallery",
     link: "",
     image: "img/projectImg/project5.png",
@@ -159,6 +164,7 @@ const projectList = [
       jquery: "img/techImg/icons8-jquery-50.png"
     }
   },{
+    projectNumber: 6,
     name: "Game Show App",
     link: "",
     image: "img/projectImg/project6.png",
@@ -171,6 +177,7 @@ const projectList = [
       js: "img/techImg/icons8-javascript-logo-50.png"
     }
   },{
+    projectNumber: 7,
     name: "WebApp Dashboard",
     link: "",
     image: "img/projectImg/project7.png",
@@ -183,6 +190,7 @@ const projectList = [
       js: "img/techImg/icons8-javascript-logo-50.png"
     }
   },{
+    projectNumber: 8,
     name: "API created Employee Directory",
     link: "",
     image: "img/projectImg/project8.png",
