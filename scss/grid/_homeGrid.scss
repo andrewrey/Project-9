@@ -40,4 +40,14 @@
 
 footer{
   grid-area: foot;
+  display: flex;
+  align-items: flex-end;
+  a {
+    color: #39ff14;
+  }
+  p {
+    display: inline-block;
+    font-size: .5rem;
+    margin-right: 10px;
+  }
 }
