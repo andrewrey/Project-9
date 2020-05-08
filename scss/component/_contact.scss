@@ -4,6 +4,15 @@
 
 
 #contact{
+  form{
+    input{
+      display: block;
+      margin-bottom: 25px;
+    }
+  }
+  svg path {
+    fill: blue;
+  }
   .contactWrap{
     max-width: 1200px;
     margin: 0 auto;
@@ -14,7 +23,14 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 300px;
+    height: 300px;
+    @include mq(1400px){
+      height: 450px;
+    }
+    nav{
+      margin-left: 40px;
+      padding-top: 25px;
+    }
   }
   background-color: slategrey;
   ul{
