@@ -50,7 +50,7 @@ const projects = {
   },
   project5: {
     name: "An Interactive Photo Gallery",
-    link: "",
+    link: "https://andrewrey.github.io/Project-5/index.html",
     image: "img/projectImg/project5.png",
     description:"Built an interactive photo gallery using JavaSCript and jQuery. Had to find a suitable lightbox jQuery plugin for this project that allowed for images to be displayed in an overlay. The page incorporates a photo search bar at the top that filters shown images based on text matching photos.",
     plateform: 'TeamTreeHouse',
@@ -63,7 +63,7 @@ const projects = {
   },
   project6: {
     name: "Game Show App",
-    link: "",
+    link: "https://andrewrey.github.io/Project-6/index.html",
     image: "img/projectImg/project6.png",
     description:"Completed a 'Wheel of Success' game using Javascript to provide the game functionality. Treehouse provided basic HTML and CSS from which students were to build the game from. ",
     plateform: 'TeamTreeHouse',
@@ -76,7 +76,7 @@ const projects = {
   },
   project7: {
     name: "WebApp Dashboard",
-    link: "",
+    link: "https://andrewrey.github.io/Project-7-WebApp-Dashboard/index.html",
     image: "img/projectImg/project7.png",
     description:"Created a mock employee dashboard using HTML, CSS and Javascript. In this project, worked with SVG images and Chart.js JavaScript Library for building the graphs on the page. Utilized local storage in order to remember user settings.     ",
     plateform: 'TeamTreeHouse',
@@ -89,7 +89,7 @@ const projects = {
   },
   project8: {
     name: "API created Employee Directory",
-    link: "",
+    link: "https://andrewrey.github.io/Project-8/index.html",
     image: "img/projectImg/project8.png",
     description:"Focus of this project was on learing how to use a third-party API and incorporate the data. Used Async Function and Fetch API to build a mock employee Directory with the functionality to Search for employees. ",
     plateform: 'TeamTreeHouse',
@@ -153,7 +153,7 @@ const projectList = [
   },{
     projectNumber: 5,
     name: "An Interactive Photo Gallery",
-    link: "",
+    link: "https://andrewrey.github.io/Project-5/index.html",
     image: "img/projectImg/project5.png",
     description:"Built an interactive photo gallery using JavaSCript and jQuery. Had to find a suitable lightbox jQuery plugin for this project that allowed for images to be displayed in an overlay. The page incorporates a photo search bar at the top that filters shown images based on text matching photos.",
     plateform: 'TeamTreeHouse',
@@ -166,7 +166,7 @@ const projectList = [
   },{
     projectNumber: 6,
     name: "Game Show App",
-    link: "",
+    link: "https://andrewrey.github.io/Project-6/index.html",
     image: "img/projectImg/project6.png",
     description:"Completed a 'Wheel of Success' game using Javascript to provide the game functionality. Treehouse provided basic HTML and CSS from which students were to build the game from. ",
     plateform: 'TeamTreeHouse',
@@ -179,7 +179,7 @@ const projectList = [
   },{
     projectNumber: 7,
     name: "WebApp Dashboard",
-    link: "",
+    link: "https://andrewrey.github.io/Project-7-WebApp-Dashboard/index.html",
     image: "img/projectImg/project7.png",
     description:"Created a mock employee dashboard using HTML, CSS and Javascript. In this project, worked with SVG images and Chart.js JavaScript Library for building the graphs on the page. Utilized local storage in order to remember user settings.     ",
     plateform: 'TeamTreeHouse',
@@ -192,7 +192,7 @@ const projectList = [
   },{
     projectNumber: 8,
     name: "API created Employee Directory",
-    link: "",
+    link: "https://andrewrey.github.io/Project-8/index.html",
     image: "img/projectImg/project8.png",
     description:"Focus of this project was on learing how to use a third-party API and incorporate the data. Used Async Function and Fetch API to build a mock employee Directory with the functionality to Search for employees. ",
     plateform: 'TeamTreeHouse',
