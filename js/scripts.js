@@ -8,7 +8,6 @@ const titleCard = document.querySelector('.titleCard');
 const pages = document.querySelectorAll('.page');
 const projectWrap = document.querySelector('.projectWrap');
 const projectSection = document.querySelector('.project');
-const formSubmit = document.querySelector('.submit');
 
 // ================== //
 // Animation JS Start //
@@ -59,16 +58,6 @@ icon.addEventListener('click', ()=>{
   },3000);
 });
 
-
-// ================== //
-//  Form Validation   //
-// ================== //
-
-formSubmit.addEventListener('click', (e)=>{
-  let name = document.querySelector('#name');
-  let email = document.querySelector('#email');
-  let subject = document.querySelector('#message');
-});
 
 
 /// Event Listener for switching header page from welcome to projects ///
