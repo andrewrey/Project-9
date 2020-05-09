@@ -20,12 +20,14 @@ const triBottomLeft = document.querySelector('.bottomleft');
 const triBottomRight = document.querySelector('.bottomright');
 const triangles = document.querySelectorAll('.tri');
 const square = document.querySelector('.square');
+const touch = document.querySelector('.touch');
 
 let flag = false;
 
 
 
 icon.addEventListener('click', ()=>{
+  touch.style.visibility = 'hidden'
   triTopLeft.classList.add('tlAnimation');
   triTopRight.classList.add('trAnimation');
   triBottomLeft.classList.add('blAnimation');
@@ -56,6 +58,7 @@ icon.addEventListener('click', ()=>{
       }
     }) 
   },3000);
+  setTimeout(()=> touch.style.visibility = 'visible', 3000);
 });
 
 

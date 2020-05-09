@@ -373,6 +373,9 @@ svg {
   display: flex;
   flex-direction: column;
   align-items: center;
+  .touch{
+    width: 25px;
+  }
 }
 
 .textWrap {
