@@ -74,8 +74,11 @@
 .arrowWrapper{
   position: absolute;
   margin-left: -6.25px;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
+  @media (max-width: 500px){
+    bottom: 150px;
+  }
   justify-content: center;
   align-items: center;
   z-index: 10;

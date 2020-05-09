@@ -380,11 +380,14 @@ svg {
 .arrowWrapper {
   position: absolute;
   margin-left: -6.25px;
-  bottom: 20px;
+  bottom: 40px;
   left: 50%;
   justify-content: center;
   align-items: center;
   z-index: 10; }
+  @media (max-width: 500px) {
+    .arrowWrapper {
+      bottom: 150px; } }
 
 .downArrow {
   position: relative;
