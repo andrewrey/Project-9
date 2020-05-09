@@ -1046,7 +1046,7 @@ footer {
   background-color: lightskyblue;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: minmax(400px, 1fr) 450px;
+  grid-template-rows: minmax(400px, 1fr) minmax(450px, auto);
   grid-template-areas: "aboutText" "goalText"; }
   @media (min-width: 768px) {
     #about main {
