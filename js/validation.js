@@ -26,7 +26,6 @@ submitForm.addEventListener('click', (e)=>{
   if(!email.value.includes('@') && email.value !== ''){
     e.preventDefault();
     email.classList.add('error');
-    console.log('test');
     alert('Please use a proper email address formatting.')
   }
 
