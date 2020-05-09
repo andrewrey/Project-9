@@ -31,12 +31,25 @@
 }
 
 #about {
+  footer{
+    display: block;
+    color: white;
+    a{
+      display: inline-block;
+    }
+    img{
+      width: 20px;
+    }
+    .footWrap{
+      margin-left: 20px;
+    }
+  }
 
   .textWrap{
     width: 80%;
     min-height: 630px;
     margin: 5px auto;
-    background-color: powderblue;
+    background-color: gainsboro;
     border-radius: 10px;
     padding: 10px;
   }
@@ -116,12 +129,12 @@
 
 .aboutText{
   grid-area: aboutText;
-  background-color: khaki;
+  background-color: #40798C;
 }
 
 .goalText{
   grid-area: goalText;
-  background-color: moccasin;
+  background-color: #40798C;
   .goalImgWrap{
     margin-top: 40px;
     img{
