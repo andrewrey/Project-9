@@ -679,6 +679,9 @@ svg {
 /* ============================================= */
 #contact {
   background-color: slategrey; }
+  #contact .error {
+    border: solid .5px orangered;
+    box-shadow: inset 0 0 10px  red; }
   #contact form {
     width: 80%;
     margin: 0 auto; }

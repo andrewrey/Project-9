@@ -64,7 +64,11 @@ icon.addEventListener('click', ()=>{
 //  Form Validation   //
 // ================== //
 
-formSubmit.addEventListener('click', (e)=>{});
+formSubmit.addEventListener('click', (e)=>{
+  let name = document.querySelector('#name');
+  let email = document.querySelector('#email');
+  let subject = document.querySelector('#message');
+});
 
 
 /// Event Listener for switching header page from welcome to projects ///
