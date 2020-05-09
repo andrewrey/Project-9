@@ -17,6 +17,7 @@
       display: block;
       margin-bottom: 25px;
       width: 100%;
+      border-radius: 5px;
     }
     .gotcha{
       display: none;
@@ -30,7 +31,7 @@
     }
   }
   svg path {
-    fill: blue;
+    fill: #07393C;
   }
   .contactWrap{
     width: 80%;

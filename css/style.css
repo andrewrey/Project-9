@@ -691,7 +691,8 @@ svg {
     #contact form textarea {
       display: block;
       margin-bottom: 25px;
-      width: 100%; }
+      width: 100%;
+      border-radius: 5px; }
     #contact form .gotcha {
       display: none; }
     #contact form .submit {
@@ -700,7 +701,7 @@ svg {
     #contact form input {
       height: 40px; }
   #contact svg path {
-    fill: blue; }
+    fill: #07393C; }
   #contact .contactWrap {
     width: 80%;
     max-width: 1200px;
