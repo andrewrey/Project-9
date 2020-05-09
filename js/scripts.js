@@ -8,7 +8,7 @@ const titleCard = document.querySelector('.titleCard');
 const pages = document.querySelectorAll('.page');
 const projectWrap = document.querySelector('.projectWrap');
 const projectSection = document.querySelector('.project');
-
+const formSubmit = document.querySelector('.submit');
 
 // ================== //
 // Animation JS Start //
@@ -60,6 +60,11 @@ icon.addEventListener('click', ()=>{
 });
 
 
+// ================== //
+//  Form Validation   //
+// ================== //
+
+formSubmit.addEventListener('click', (e)=>{});
 
 
 /// Event Listener for switching header page from welcome to projects ///
