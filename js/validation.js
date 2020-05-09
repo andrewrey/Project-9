@@ -16,11 +16,18 @@ submitForm.addEventListener('click', (e)=>{
   let formInputs = [name, email, message];
   formInputs.forEach(formInput => {
     if(formInput.value === ''){
+      e.preventDefault();
       formInput.classList.add('error');
     }
   });
   if(formInputs.some(formInput => formInput.classList.contains('error'))){
     alert("Please fill in the missing information!");
   }
-  e.preventDefault();
+  if(!email.value.includes('@') && email.value !== ''){
+    e.preventDefault();
+    email.classList.add('error');
+    console.log('test');
+    alert('Please use a proper email address formatting.')
+  }
+
 });
